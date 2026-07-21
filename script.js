@@ -579,7 +579,7 @@ function initNavbar() {
  * Detect which section is in view and update bottom nav active state.
  */
 function updateActiveNavOnScroll() {
-  const sections = ['home', 'menu', 'contact'];
+  const sections = ['home', 'menu'];
   const scrollPos = window.scrollY + window.innerHeight / 3;
 
   let currentSection = sections[0];
