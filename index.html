@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ===================== META & SEO ===================== -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ganesh Bakery – Freshly baked breads, cakes, pastries, juices, shakes and snacks. Order online or visit us today." />
+  <meta name="keywords" content="Ganesh Bakery, fresh baked goods, cakes, pastries, juices, shakes, snacks, bakery near me" />
+  <meta name="author" content="Ganesh Bakery" />
+  <meta property="og:title" content="Ganesh Bakery – Freshly Baked Every Day" />
+  <meta property="og:description" content="Premium bakery experience with freshly baked goods, beverages, and snacks." />
+  <meta property="og:type" content="website" />
+  <title>Ganesh Bakery – Freshly Baked Every Day</title>
+
+  <!-- ===================== FONTS ===================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- ===================== BOOTSTRAP 5 ===================== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- ===================== CUSTOM CSS ===================== -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loading-screen" role="status" aria-label="Loading Ganesh Bakery">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <i class="bi bi-shop"></i>
+      </div>
+      <p class="loader-name">Ganesh Bakery</p>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ===================== STICKY NAVBAR (MOBILE TOP) ===================== -->
+  <header id="main-header" role="banner">
+    <nav class="navbar navbar-expand-lg top-navbar" aria-label="Main navigation">
+      <div class="container-fluid px-3">
+        <!-- Brand -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#home" aria-label="Ganesh Bakery Home">
+          <span class="brand-icon"><i class="bi bi-shop-window" aria-hidden="true"></i></span>
+          <span class="brand-text">Ganesh Bakery</span>
+        </a>
+        <!-- Desktop nav links -->
+        <div class="d-none d-lg-flex align-items-center gap-1 ms-auto">
+          <a class="nav-link" href="#home" id="nav-home">Home</a>
+          <a class="nav-link" href="#menu" id="nav-menu">Menu</a>
+          <a class="nav-link" href="#contact" id="nav-contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== MAIN CONTENT ===================== -->
+  <main id="main-content">
+
+    <!-- ========== HERO / HOME SECTION ========== -->
+    <section id="home" class="hero-section" aria-label="Hero Banner">
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content container text-center">
+        <p class="hero-subtitle" data-animate="fade-up">Welcome to</p>
+        <h1 class="hero-title" data-animate="fade-up" data-delay="100">Ganesh Bakery</h1>
+        <p class="hero-tagline" data-animate="fade-up" data-delay="200">
+          <i class="bi bi-star-fill" aria-hidden="true"></i>
+          Freshly Baked Every Day
+          <i class="bi bi-star-fill" aria-hidden="true"></i>
+        </p>
+        <p class="hero-desc" data-animate="fade-up" data-delay="300">
+          Handcrafted with love — from our warm ovens to your hands. Discover artisan breads,
+          decadent cakes, refreshing juices &amp; more.
+        </p>
+        <a href="#menu" class="btn hero-cta-btn" data-animate="fade-up" data-delay="400" aria-label="View our full menu">
+          <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
+          View Menu
+        </a>
+      </div>
+      <!-- Decorative floating elements -->
+      <div class="hero-float-1" aria-hidden="true"><i class="bi bi-cup-hot-fill"></i></div>
+      <div class="hero-float-2" aria-hidden="true"><i class="bi bi-cake2-fill"></i></div>
+      <div class="hero-float-3" aria-hidden="true"><i class="bi bi-flower1"></i></div>
+    </section>
+
+    <!-- ========== HIGHLIGHTS STRIP ========== -->
+    <section class="highlights-strip" aria-label="Our highlights">
+      <div class="container">
+        <div class="row g-0 justify-content-center">
+          <div class="col-4 col-md-3">
+            <div class="highlight-item">
+              <i class="bi bi-fire" aria-hidden="true"></i>
+              <span>Fresh Daily</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="highlight-item">
+              <i class="bi bi-award-fill" aria-hidden="true"></i>
+              <span>Premium Quality</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3">
+            <div class="highlight-item">
+              <i class="bi bi-heart-fill" aria-hidden="true"></i>
+              <span>Made with Love</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MENU SECTION ========== -->
+    <section id="menu" class="menu-section" aria-label="Our Menu">
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header text-center" data-animate="fade-up">
+          <p class="section-eyebrow">Explore Our</p>
+          <h2 class="section-title">Delicious Menu</h2>
+          <p class="section-desc">Every item crafted fresh daily with finest ingredients</p>
+        </div>
+
+
+
+        <!-- Category Filter Chips -->
+        <div class="category-scroll-wrapper" role="tablist" aria-label="Menu categories" data-animate="fade-up">
+          <div class="category-chips" id="category-chips">
+            <!-- Chips injected by JS -->
+          </div>
+        </div>
+
+        <!-- No results message -->
+        <div id="no-results" class="no-results-msg text-center" hidden aria-live="polite">
+          <i class="bi bi-emoji-frown" aria-hidden="true"></i>
+          <p>No items found. Try a different search.</p>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="row g-3 g-md-4" id="products-grid" role="list" aria-label="Menu items">
+          <!-- Product cards injected by JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact-section" aria-label="Contact Us">
+      <div class="container">
+
+        <div class="section-header text-center" data-animate="fade-up">
+          <p class="section-eyebrow">Get In Touch</p>
+          <h2 class="section-title">Visit Us</h2>
+          <p class="section-desc">We'd love to see you at our bakery</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- Contact Card -->
+          <div class="col-12 col-md-6 col-lg-5" data-animate="fade-up">
+            <div class="contact-card">
+              <div class="contact-brand">
+                <span class="brand-icon large"><i class="bi bi-shop-window" aria-hidden="true"></i></span>
+                <div>
+                  <h3 class="contact-bakery-name">Ganesh Bakery</h3>
+                  <p class="contact-bakery-tagline">Freshly Baked Every Day</p>
+                </div>
+              </div>
+
+              <ul class="contact-list" aria-label="Contact information">
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true"><i class="bi bi-geo-alt-fill"></i></span>
+                  <div>
+                    <p class="contact-label">Address</p>
+                    <p class="contact-value">12, Gandhi Road, Near Town Hall,<br />Chennai – 600 001, Tamil Nadu</p>
+                  </div>
+                </li>
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true"><i class="bi bi-telephone-fill"></i></span>
+                  <div>
+                    <p class="contact-label">Phone</p>
+                    <a href="tel:+919876543210" class="contact-value contact-link" aria-label="Call us at +91 98765 43210">+91 98765 43210</a>
+                  </div>
+                </li>
+                <li class="contact-item">
+                  <span class="contact-icon" aria-hidden="true"><i class="bi bi-clock-fill"></i></span>
+                  <div>
+                    <p class="contact-label">Opening Hours</p>
+                    <p class="contact-value">Mon – Sat: 7:00 AM – 9:00 PM</p>
+                    <p class="contact-value">Sunday: 8:00 AM – 6:00 PM</p>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Action Buttons -->
+              <div class="contact-actions">
+                <a
+                  href="https://wa.me/919876543210?text=Hello%20Ganesh%20Bakery%2C%20I%20would%20like%20to%20place%20an%20order."
+                  class="btn contact-btn whatsapp-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Chat with us on WhatsApp"
+                >
+                  <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                  WhatsApp Us
+                </a>
+                <a
+                  href="https://maps.google.com/?q=Ganesh+Bakery+Chennai"
+                  class="btn contact-btn maps-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Find us on Google Maps"
+                >
+                  <i class="bi bi-map-fill" aria-hidden="true"></i>
+                  Google Maps
+                </a>
+                <a
+                  href="tel:+919876543210"
+                  class="btn contact-btn call-btn"
+                  aria-label="Call us now"
+                >
+                  <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                  Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hours Card -->
+          <div class="col-12 col-md-6 col-lg-4" data-animate="fade-up" data-delay="100">
+            <div class="hours-card">
+              <h3 class="hours-title"><i class="bi bi-clock-history" aria-hidden="true"></i> Hours</h3>
+              <ul class="hours-list" aria-label="Opening hours">
+                <li class="hours-row"><span>Monday</span><span class="hours-time open">7 AM – 9 PM</span></li>
+                <li class="hours-row"><span>Tuesday</span><span class="hours-time open">7 AM – 9 PM</span></li>
+                <li class="hours-row"><span>Wednesday</span><span class="hours-time open">7 AM – 9 PM</span></li>
+                <li class="hours-row"><span>Thursday</span><span class="hours-time open">7 AM – 9 PM</span></li>
+                <li class="hours-row"><span>Friday</span><span class="hours-time open">7 AM – 9 PM</span></li>
+                <li class="hours-row"><span>Saturday</span><span class="hours-time open">7 AM – 9 PM</span></li>
+                <li class="hours-row"><span>Sunday</span><span class="hours-time sunday">8 AM – 6 PM</span></li>
+              </ul>
+              <!-- Live status badge -->
+              <div class="open-status" id="open-status" aria-live="polite"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container text-center">
+      <div class="footer-brand">
+        <span class="brand-icon"><i class="bi bi-shop-window" aria-hidden="true"></i></span>
+        <span class="brand-text">Ganesh Bakery</span>
+      </div>
+      <p class="footer-tagline">Freshly Baked Every Day ✨</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="footer-year"></span> Ganesh Bakery. All rights reserved.</p>
+      <p class="footer-love">Made with <i class="bi bi-heart-fill" aria-hidden="true"></i> for our customers</p>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTTOM NAVIGATION (MOBILE) ===================== -->
+  <nav class="bottom-nav" id="bottom-nav" role="navigation" aria-label="Mobile bottom navigation">
+    <a href="#home" class="bottom-nav-item active" id="bnav-home" aria-label="Go to Home">
+      <i class="bi bi-house-fill" aria-hidden="true"></i>
+      <span>Home</span>
+    </a>
+    <a href="#menu" class="bottom-nav-item" id="bnav-menu" aria-label="Go to Menu">
+      <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
+      <span>Menu</span>
+    </a>
+    <a href="#contact" class="bottom-nav-item" id="bnav-contact" aria-label="Go to Contact">
+      <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+      <span>Contact</span>
+    </a>
+  </nav>
+
+  <!-- ===================== PRODUCT MODAL ===================== -->
+  <div
+    class="modal fade"
+    id="productModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="productModalLabel"
+    aria-modal="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-sm-custom">
+      <div class="modal-content product-modal-content">
+        <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close product details">
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+        <div class="modal-img-wrapper">
+          <img id="modal-img" src="" alt="" class="modal-product-img" loading="lazy" />
+          <div class="modal-category-badge" id="modal-category"></div>
+        </div>
+        <div class="modal-body-custom">
+          <h4 id="productModalLabel" class="modal-product-name"></h4>
+          <p class="modal-product-desc" id="modal-desc"></p>
+          <div class="modal-price-row">
+            <span class="modal-price" id="modal-price"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Scroll back to top" hidden>
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ===================== BOOTSTRAP JS ===================== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ===================== CUSTOM JS ===================== -->
+  <script src="script.js"></script>
+
+</body>
+</html>
